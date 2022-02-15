@@ -16,24 +16,21 @@
         <link
             href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap"
             rel="stylesheet">
-        <link rel="stylesheet" href="layout.css">
-        <script src="script.js"></script>
+        <link rel="stylesheet" href="./src/layout.css">
+        <script src="./scr/script.js"></script>
     </head>
     <body>
-        <iframe src="header.html" onload="this.insertAdjacentHTML('afterend', (this.contentDocument.body||this.contentDocument).innerHTML);this.remove()"></iframe>
+        @@include('./include/header.html')
         <div class="container">
             <aside>사이드메뉴</aside>
             <main>
                 - ABOUT -<br>
                 <div id="line"></div>
-                <div class="main_content">안녕하세요<br>간단하게 레이아웃을 구현해봤습니다.<br>테스트중입니다.<br><br><img src="image.jpg" class="imgTest"><br>[ github>>image.jpg ]<br><br>test<br><br><br>test<br><br><br>test<br><br><br>test<br><br><br>test<br><br><br>test<br><br><br>test<br><br><br>test<br><br><br>test<br><br><br>test<br><br><br>test<br><br><br>test<br><br><br>test<br><br><br>test<br><br><br>test<br><br><br>test<br><br><br>test<br><br><br>test
+                <div class="main_content">안녕하세요<br>간단하게 레이아웃을 구현해봤습니다.<br>테스트중입니다.<br><br><img src="./src/img/image.jpg" class="imgTest"><br>[ github>>image.jpg ]<br><br>test<br><br><br>test<br><br><br>test<br><br><br>test<br><br><br>test<br><br><br>test<br><br><br>test<br><br><br>test<br><br><br>test<br><br><br>test<br><br><br>test<br><br><br>test<br><br><br>test<br><br><br>test<br><br><br>test<br><br><br>test<br><br><br>test<br><br><br>test
                 </div>
             </main>
         </div>
-        <footer>
-            <p>Made by 김종연(poot97@naver.com)<br>tel. 010-1234-6789</p>
-        </footer>
-        <div id="bottom_fade"></div>
+        @@include('./include/footer.html')
     </body>
 
 </html>
