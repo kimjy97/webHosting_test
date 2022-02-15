@@ -19,9 +19,8 @@
         <link rel="stylesheet" href="layout.css">
         <script src="script.js"></script>
     </head>
-    
     <body>
-        @@include('header.html')
+        <iframe src="header.html" onload="this.insertAdjacentHTML('afterend', (this.contentDocument.body||this.contentDocument).innerHTML);this.remove()"></iframe>
         <div class="container">
             <aside>사이드메뉴</aside>
             <main>
